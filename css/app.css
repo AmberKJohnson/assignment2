@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Work+Sans');
+
+.title{
+  padding-bottom: 50px;
+}
+
+p{
+  color:black;
+  font-family: 'Open Sans', sans-serif;
+font-size:25px;}
+h1{font-family: 'Courgette', cursive;
+font-size:25px;}
+h2 {font-family: 'Courgette', cursive;
+font-size:25px;}
+h3 {font-family: 'Courgette', cursive;
+font-size:25px;}
+ h4{
+  font-family: 'Courgette', cursive;
+}
+
+body{
+  background-color:#E8E8E8;
+  background-image: url(tcolors.jpg);
+}
+
+
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 14em;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+  padding-top: 90px;
+  text-align: center;
+  padding-left: 70px;
+}
+.link--kukuri {
+	text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #b2b0a9;
+  text-align: center;
+}
+
+.link--kukuri:hover {
+	color: #b2b0a9;
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;gi
+	height: 16px;
+	width: 100%;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: #F9F9F9;
+	transform: translate3d(-100%,0,0);
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #424242;
+	white-space: nowrap;
+	width: 0%;
+	transition: width 0.4s 0.3s;
+  border-bottom: 50px;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
+}
+
+.hover12 figure {
+	background: #1abc9c;
+  width:1066px;
+  height:600px;
+}
+.hover12 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  width:1066px;
+  height:600px;
+}
+.hover12 figure:hover img {
+	opacity: .5;
+  width:1066px;
+  height:600px;
+}
+.cs-style-1 figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	text-align: center;
+	backface-visibility: hidden;
+	transition: transform 0.3s, opacity 0.3s;
+}
+.no-touch .cs-style-1 figure:hover figcaption,
+.cs-style-1 figure.cs-hover figcaption {
+	opacity: 1;
+	transform: translate(15px, 15px);
+}
+.cs-style-1 figcaption h3 {
+	margin-top: 70px;
+}
+
+.cs-style-1 figcaption span {
+	display: block;
+}
+
+.cs-style-1 figcaption a {
+	margin-top: 30px;
+}
+
+
+
+            .one {
+             animation-duration: 9s;
+            animation-name: slidein;
+              padding: 5px 5px 5px 5px;
+
+                  }
+            .two {
+             animation-duration: 10s;
+             animation-name: slidein;
+
+                }
+                .three {
+                 animation-duration: 11s;
+                 animation-name: slidein;
+
+                    }
+              @keyframes slidein {
+               from {
+               margin-left: 100%;
+               width: 300%;
+                }
+
+              to {
+              margin-left: 0%;
+              width: 100%;
+                 }
+                 }
+                 .container {
+                   margin: 100px;
+                 }
+
+                 .circle, .circle0, .circle1, .circle2, .circle3, .circle4, .circle5 {
+                   border-radius: 50%;
+                   height: 90px;
+                   width: 90px;
+                   margin: 10px;
+                 }
+                 .container:hover .circle, .container:hover .circle0, .container:hover .circle1, .container:hover .circle2, .container:hover .circle3, .container:hover .circle4, .container:hover .circle5 {
+                   transform: translateX(200px);
+                 }
+
+                 .circle0 {
+                   background: PaleTurquoise;
+                   transition: all 1.5s linear;
+                 }
+
+                 .circle1 {
+                   background: salmon;
+                   transition: all 1.7s ease;
+                 }
+
+                 .circle2 {
+                   background: lightskyblue;
+                   transition: all 1.6s ease-in;
+                 }
+
+                 .circle3 {
+                   background: khaki;
+                   transition: all 1.1s ease-out;
+                 }
+
+                 .circle4 {
+                   background: mediumturquoise;
+                   transition: all 1.5s ease-in-out;
+                 }
+
+                 .circle5 {
+                   background: thistle;
+                   transition: all 1.5s cubic-bezier(0, 1, 0.98, 0);
+                 }
+
+
+
+
+
+                 .hi {
+    width: 400px;
+    height: 199.3px;
+    background-image: url("tuna_sprite.png");
+
+    -webkit-animation: play .6s steps(13) infinite;
+       -moz-animation: play .6s steps(13) infinite;
+        -ms-animation: play .6s steps(13) infinite;
+         -o-animation: play .6s steps(13) infinite;
+            animation: play .6s steps(13) infinite;
+
+}
+
+@-webkit-keyframes play {
+   from { background-position:   0px 0px; }
+     to { background-position: 0px -2591px; }
+}
+
+@-moz-keyframes play {
+   from { background-position: 0px 0px; }
+     to { background-position: 0px -2591px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2591px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2591px; }
+}
+
+@keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -2591px; }
+}
+
+
+
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+  font-size:24px;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #52acc5;
+  float: right;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
